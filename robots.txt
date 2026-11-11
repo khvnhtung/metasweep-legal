@@ -1,0 +1,5 @@
+# Allow Google Search Console & OAuth verification crawlers to fetch pages
+# so they read <meta name="robots" content="noindex, nofollow, noarchive">
+# without indexing URLs in public search results.
+User-agent: *
+Allow: /

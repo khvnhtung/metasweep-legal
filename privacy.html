@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+  <title>Privacy Policy · Chính sách quyền riêng tư — MetaSweep</title>
+  <link rel="icon" type="image/png" sizes="120x120" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <a class="brand-link" href="index.html" data-keep-lang>
+        <img class="brand-logo" src="logo.png" alt="" width="40" height="40">
+        <span data-lang="vi">MetaSweep · Xóa &amp; Sửa EXIF</span>
+        <span data-lang="en">MetaSweep · EXIF Editor</span>
+      </a>
+      <nav class="nav-row" aria-label="Primary">
+        <a href="index.html" data-keep-lang>
+          <span data-lang="vi">Trang chủ</span><span data-lang="en">Home</span>
+        </a>
+        <a href="privacy.html" aria-current="page" data-keep-lang>
+          <span data-lang="vi">Quyền riêng tư</span><span data-lang="en">Privacy Policy</span>
+        </a>
+        <a href="terms.html" data-keep-lang>
+          <span data-lang="vi">Điều khoản</span><span data-lang="en">Terms</span>
+        </a>
+        <a href="support.html" data-keep-lang>
+          <span data-lang="vi">Hỗ trợ</span><span data-lang="en">Support</span>
+        </a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-set-lang="vi">VI</button>
+          <button type="button" class="lang-btn active" data-set-lang="en">EN</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <article class="card" data-lang="en">
+        <span class="badge">Effective Date: November 11, 2026</span>
+        <h1>Privacy Policy</h1>
+        <p><strong>MetaSweep (EXIF Editor: Photo Metadata)</strong> is built around a strict <strong>100% On-Device Media Engine</strong>. Your photos, videos, filenames, GPS coordinates, and EXIF/IPTC metadata never leave your iPhone or iPad.</p>
+
+        <h2>1. 100% On-Device Media Processing &amp; Zero Photo Exfiltration</h2>
+        <p>All metadata inspection, GPS scrubbing, satellite geotagging, timestamp shifting, IPTC authoring, and 4K video audio muting run strictly on your device via Apple's native <code>ImageIO</code>, <code>AVFoundation</code>, and <code>PHPhotoLibrary</code> frameworks. The iOS Share Extension (<em>Clean &amp; Share</em>) contains zero networking or analytics code.</p>
+
+        <h2>2. Photo Library &amp; File Access</h2>
+        <ul>
+          <li><strong>Zero-Permission Picker Mode:</strong> You can inspect and scrub individual photos or files using Apple's system <code>PhotosPicker</code> or Files importer without granting Photo Library permission.</li>
+          <li><strong>Optional Photo Library Access:</strong> If you grant Photo Library access to use the Smart Filter Grid (e.g., filtering by <em>Has GPS</em>, <em>Videos</em>, <em>Live</em>, or <em>RAW</em>) or to commit edits back to your Camera Roll, all scanning and lossless container mutation occur strictly in local memory and temporary on-device storage.</li>
+        </ul>
+
+        <h2>3. Optional Anonymous Diagnostics &amp; In-App Feedback</h2>
+        <p>To help us detect crashes, camera format edge cases, and usability issues, the main MetaSweep app uses <strong>PostHog</strong> in strict anonymous mode (<code>NSPrivacyTracking = false</code>, zero advertising identifiers, zero third-party ad networks):</p>
+        <ul>
+          <li><strong>No User Profiles &amp; No Screen Replay:</strong> Configured with <code>personProfiles = .never</code>, session replay disabled, and UI view autocapture disabled.</li>
+          <li><strong>Automatic On-Device Redaction:</strong> Before any anonymous diagnostic event, crash trace, or voluntary in-app feedback message is sent, a local client-side scrubber strips GPS coordinate pairs, photo/video filenames, file paths, URLs, tokens, and email addresses.</li>
+          <li><strong>Instant Opt-Out Anytime:</strong> Tap <strong>Feedback</strong> in the top-left toolbar of MetaSweep and turn off <em>Share Anonymous Usage &amp; Crash Diagnostics</em> at any time to immediately halt all telemetry.</li>
+          <li><strong>Lightweight Update Check:</strong> On launch, the app may fetch a static <code>version.json</code> manifest over HTTPS without cookies or identifiers solely to notify you of critical iOS media format fixes.</li>
+        </ul>
+
+        <h2>4. Local On-Device Storage</h2>
+        <p>Saved metadata presets, edit history receipts, and your diagnostics preference are stored exclusively inside your device's local sandboxed SQLite database and <code>UserDefaults</code>. Deleting the App immediately removes all local data.</p>
+
+        <h2>5. Launch Edition Access &amp; StoreKit 2</h2>
+        <p>In the Launch Edition of MetaSweep, all features are unlocked for free with zero advertisements. If optional upgrades are offered in future updates via Apple StoreKit 2, all billing is processed directly by Apple and MetaSweep never receives your payment details.</p>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:laotung400@gmail.com">laotung400@gmail.com</a>.</p>
+      </article>
+
+      <article class="card" data-lang="vi">
+        <span class="badge">Ngày có hiệu lực: 11/11/2026</span>
+        <h1>Chính sách quyền riêng tư</h1>
+        <p><strong>MetaSweep (EXIF Editor: Photo Metadata)</strong> hoạt động theo kiến trúc <strong>Xử lý phương tiện 100% trên thiết bị</strong>. Hình ảnh, video, tên tệp, tọa độ GPS và siêu dữ liệu EXIF/IPTC của bạn không bao giờ rời khỏi iPhone hoặc iPad.</p>
+
+        <h2>1. Xử lý ảnh &amp; video 100% trên thiết bị</h2>
+        <p>Mọi thao tác đọc siêu dữ liệu, xóa GPS, ghim vị trí vệ tinh, đổi múi giờ, sửa IPTC và tắt tiếng video 4K đều diễn ra cục bộ thông qua <code>ImageIO</code>, <code>AVFoundation</code> và <code>PHPhotoLibrary</code>. Tiện ích chia sẻ (<em>Clean &amp; Share</em>) hoàn toàn không chứa mã kết nối mạng hay phân tích.</p>
+
+        <h2>2. Quyền truy cập Thư viện ảnh &amp; Tệp</h2>
+        <p>Bạn có thể chọn từng ảnh/tệp qua <code>PhotosPicker</code> hoặc ứng dụng Tệp mà không cần cấp quyền Thư viện ảnh, hoặc cấp quyền tùy chọn để lọc nhanh ảnh chứa GPS, Video, Live Photo và RAW ngay trên thiết bị.</p>
+
+        <h2>3. Chẩn đoán lỗi ẩn danh tùy chọn &amp; Gửi phản hồi trong ứng dụng</h2>
+        <p>Để phát hiện lỗi định dạng máy ảnh và sự cố ứng dụng, ứng dụng chính sử dụng <strong>PostHog</strong> ở chế độ ẩn danh nghiêm ngặt (<code>NSPrivacyTracking = false</code>, không quảng cáo, không theo dõi liên ứng dụng, không tạo hồ sơ người dùng và không ghi màn hình). Bộ lọc cục bộ tự động ẩn tọa độ GPS, tên tệp ảnh/video, đường dẫn và email trước khi gửi. Bạn có thể tắt hoàn toàn bất cứ lúc nào tại mục <strong>Feedback → Share Anonymous Usage &amp; Crash Diagnostics</strong>.</p>
+
+        <h2>4. Lưu trữ cục bộ &amp; Phiên bản ra mắt miễn phí</h2>
+        <p>Mẫu cài sẵn và lịch sử chỉnh sửa chỉ được lưu trong cơ sở dữ liệu SQLite cục bộ trên máy. Trong phiên bản ra mắt hiện tại, toàn bộ tính năng được mở khóa miễn phí 100% và không có quảng cáo.</p>
+
+        <h2>5. Liên hệ</h2>
+        <p>Mọi câu hỏi về Chính sách quyền riêng tư, vui lòng liên hệ <a href="mailto:laotung400@gmail.com">laotung400@gmail.com</a>.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div data-lang="vi"><p>© 2026 Khanh Tung · <a href="terms.html" data-keep-lang>Điều khoản</a> · <a href="support.html" data-keep-lang>Hỗ trợ</a></p></div>
+      <div data-lang="en"><p>© 2026 Khanh Tung · <a href="terms.html" data-keep-lang>Terms</a> · <a href="support.html" data-keep-lang>Support</a></p></div>
+    </footer>
+  </div>
+</body>
+</html>

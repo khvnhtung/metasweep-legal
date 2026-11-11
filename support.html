@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+  <title>Support · Trung tâm hỗ trợ — MetaSweep</title>
+  <link rel="icon" type="image/png" sizes="120x120" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <a class="brand-link" href="index.html" data-keep-lang>
+        <img class="brand-logo" src="logo.png" alt="" width="40" height="40">
+        <span data-lang="vi">MetaSweep · Xóa &amp; Sửa EXIF</span>
+        <span data-lang="en">MetaSweep · EXIF Editor</span>
+      </a>
+      <nav class="nav-row" aria-label="Primary">
+        <a href="index.html" data-keep-lang><span data-lang="vi">Trang chủ</span><span data-lang="en">Home</span></a>
+        <a href="privacy.html" data-keep-lang><span data-lang="vi">Quyền riêng tư</span><span data-lang="en">Privacy Policy</span></a>
+        <a href="terms.html" data-keep-lang><span data-lang="vi">Điều khoản</span><span data-lang="en">Terms</span></a>
+        <a href="support.html" aria-current="page" data-keep-lang><span data-lang="vi">Hỗ trợ</span><span data-lang="en">Support</span></a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-set-lang="vi">VI</button>
+          <button type="button" class="lang-btn active" data-set-lang="en">EN</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <article class="card" data-lang="en">
+        <span class="badge">Customer Support &amp; FAQ</span>
+        <h1>Support Center</h1>
+        <p>Need help with MetaSweep on iPhone or iPad? Check the answers below, send an in-app report, or email us directly.</p>
+        <div class="callout">
+          <strong>Direct Support Contact:</strong><br>
+          Email: <a href="mailto:laotung400@gmail.com">laotung400@gmail.com</a> (typical response within 1–2 business days).
+        </div>
+        <h2>Frequently Asked Questions</h2>
+        <h3>1. Does MetaSweep re-compress my HEIC, ProRAW, or 4K video files?</h3>
+        <p>No. MetaSweep uses container-level lossless mutation (<code>CGImageDestinationCopyImageSource</code> and <code>AVAssetExportPresetPassthrough</code>) so pixel bitstreams and Apple ISO HDR gain maps pass through untouched.</p>
+        <h3>2. Why does Privacy Safe keep DateTimeOriginal?</h3>
+        <p>Stripping <code>DateTimeOriginal</code> scrambles chronological sorting in iOS Photos. <em>Privacy Safe</em> removes GPS, serial numbers, owner names, and identifying tags while preserving capture date and orientation. Choose <em>Complete Wipe</em> when you want 100% of timestamps stripped too.</p>
+        <h3>3. Can I recover an original photo after choosing Replace in Library?</h3>
+        <p>Yes—for up to 30 days via the <em>Recently Deleted</em> album in the iOS Photos app, or use <em>Save Copy</em> / <em>Share Clean</em> to leave the original untouched.</p>
+        <h3>4. How do I report a bug or turn off anonymous diagnostics in the app?</h3>
+        <p>Tap <strong>Feedback</strong> in the top-left corner of MetaSweep to submit an anonymous bug report, email support with non-PII version diagnostics pre-filled, or toggle off <em>Share Anonymous Usage &amp; Crash Diagnostics</em> at any time.</p>
+      </article>
+
+      <article class="card" data-lang="vi">
+        <span class="badge">Trung tâm Hỗ trợ &amp; Câu hỏi thường gặp</span>
+        <h1>Trung tâm Hỗ trợ</h1>
+        <p>Bạn cần hỗ trợ khi sử dụng MetaSweep trên iPhone hoặc iPad? Xem câu trả lời bên dưới, gửi phản hồi trực tiếp trong ứng dụng hoặc gửi email cho chúng tôi.</p>
+        <div class="callout">
+          <strong>Liên hệ hỗ trợ trực tiếp:</strong><br>
+          Email: <a href="mailto:laotung400@gmail.com">laotung400@gmail.com</a> (phản hồi trong 1–2 ngày làm việc).
+        </div>
+        <h2>Câu hỏi thường gặp</h2>
+        <h3>1. MetaSweep có nén lại ảnh HEIC, ProRAW hay video 4K không?</h3>
+        <p>Không. MetaSweep ghi siêu dữ liệu trực tiếp ở cấp độ container (<code>CGImageDestinationCopyImageSource</code> và <code>AVAssetExportPresetPassthrough</code>), giữ nguyên 100% chất lượng điểm ảnh và bản đồ dải tương phản HDR.</p>
+        <h3>2. Vì sao chế độ Privacy Safe giữ lại ngày chụp gốc?</h3>
+        <p>Việc xóa <code>DateTimeOriginal</code> sẽ làm xáo trộn thứ tự thời gian trong ứng dụng Ảnh iOS. Chế độ <em>Privacy Safe</em> xóa sạch GPS, số sê-ri và thông tin định danh nhưng giữ lại ngày chụp. Hãy chọn <em>Complete Wipe</em> nếu bạn muốn xóa toàn bộ dấu thời gian.</p>
+        <h3>3. Làm sao để báo lỗi hoặc tắt chẩn đoán ẩn danh?</h3>
+        <p>Nhấn nút <strong>Feedback</strong> ở góc trên bên trái màn hình chính để gửi báo cáo lỗi ẩn danh, gửi email hỗ trợ hoặc tắt mục <em>Share Anonymous Usage &amp; Crash Diagnostics</em> bất cứ lúc nào.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div data-lang="vi"><p>© 2026 Khanh Tung · <a href="privacy.html" data-keep-lang>Quyền riêng tư</a> · <a href="terms.html" data-keep-lang>Điều khoản</a></p></div>
+      <div data-lang="en"><p>© 2026 Khanh Tung · <a href="privacy.html" data-keep-lang>Privacy Policy</a> · <a href="terms.html" data-keep-lang>Terms</a></p></div>
+    </footer>
+  </div>
+</body>
+</html>
