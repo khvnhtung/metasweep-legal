@@ -42,13 +42,13 @@
         </div>
         <h2>Frequently Asked Questions</h2>
         <h3>1. Does MetaSweep re-compress my HEIC, ProRAW, or 4K video files?</h3>
-        <p>No. MetaSweep uses container-level lossless mutation (<code>CGImageDestinationCopyImageSource</code> and <code>AVAssetExportPresetPassthrough</code>) so pixel bitstreams and Apple ISO HDR gain maps pass through untouched.</p>
+        <p>Metadata edits use container-level image mutation and video passthrough where supported. If a file cannot be processed safely, the app reports an error. Keep an original copy when working with an unfamiliar format.</p>
         <h3>2. Why does Privacy Safe keep DateTimeOriginal?</h3>
-        <p>Stripping <code>DateTimeOriginal</code> scrambles chronological sorting in iOS Photos. <em>Privacy Safe</em> removes GPS, serial numbers, owner names, and identifying tags while preserving capture date and orientation. Choose <em>Complete Wipe</em> when you want 100% of timestamps stripped too.</p>
+        <p>Stripping <code>DateTimeOriginal</code> scrambles chronological sorting in iOS Photos. <em>Privacy Safe</em> removes GPS, serial numbers, owner names, and identifying tags while preserving capture date and orientation. Choose <em>Complete Wipe</em> when you want capture dates removed too.</p>
         <h3>3. Can I recover an original photo after choosing Replace in Library?</h3>
         <p>Yes—for up to 30 days via the <em>Recently Deleted</em> album in the iOS Photos app, or use <em>Save Copy</em> / <em>Share Clean</em> to leave the original untouched.</p>
-        <h3>4. How do I report a bug or turn off anonymous diagnostics in the app?</h3>
-        <p>Tap <strong>Feedback</strong> in the top-left corner of MetaSweep to submit an anonymous bug report, email support with non-PII version diagnostics pre-filled, or toggle off <em>Share Anonymous Usage &amp; Crash Diagnostics</em> at any time.</p>
+        <h3>4. How do I report a bug or turn off usage analytics?</h3>
+        <p>Tap <strong>Feedback</strong> in the top-left corner of MetaSweep to submit a report, email support with app-version diagnostics pre-filled, or turn off the diagnostics toggle. Usage events and handled-error reports use random installation and session identifiers; see the Privacy Policy for details.</p>
       </article>
 
       <article class="card" data-lang="vi">
@@ -61,11 +61,13 @@
         </div>
         <h2>Câu hỏi thường gặp</h2>
         <h3>1. MetaSweep có nén lại ảnh HEIC, ProRAW hay video 4K không?</h3>
-        <p>Không. MetaSweep ghi siêu dữ liệu trực tiếp ở cấp độ container (<code>CGImageDestinationCopyImageSource</code> và <code>AVAssetExportPresetPassthrough</code>), giữ nguyên 100% chất lượng điểm ảnh và bản đồ dải tương phản HDR.</p>
+        <p>MetaSweep ch&#7881;nh s&#7917;a si&#234;u d&#7919; li&#7879;u &#7903; c&#7845;p &#273;&#7897; t&#7879;p v&#224; gi&#7919; nguy&#234;n lu&#7891;ng video khi &#273;&#7883;nh d&#7841;ng h&#7895; tr&#7907;. N&#7871;u kh&#244;ng th&#7875; x&#7917; l&#253; an to&#224;n, &#7913;ng d&#7909;ng s&#7869; b&#225;o l&#7895;i. H&#227;y gi&#7919; b&#7843;n g&#7889;c khi d&#249;ng &#273;&#7883;nh d&#7841;ng ch&#432;a quen thu&#7897;c.</p>
         <h3>2. Vì sao chế độ Privacy Safe giữ lại ngày chụp gốc?</h3>
         <p>Việc xóa <code>DateTimeOriginal</code> sẽ làm xáo trộn thứ tự thời gian trong ứng dụng Ảnh iOS. Chế độ <em>Privacy Safe</em> xóa sạch GPS, số sê-ri và thông tin định danh nhưng giữ lại ngày chụp. Hãy chọn <em>Complete Wipe</em> nếu bạn muốn xóa toàn bộ dấu thời gian.</p>
-        <h3>3. Làm sao để báo lỗi hoặc tắt chẩn đoán ẩn danh?</h3>
-        <p>Nhấn nút <strong>Feedback</strong> ở góc trên bên trái màn hình chính để gửi báo cáo lỗi ẩn danh, gửi email hỗ trợ hoặc tắt mục <em>Share Anonymous Usage &amp; Crash Diagnostics</em> bất cứ lúc nào.</p>
+        <h3>3. Kh&#244;i ph&#7909;c b&#7843;n g&#7889;c sau khi thay th&#7871;?</h3>
+        <p>B&#7841;n c&#243; th&#7875; kh&#244;i ph&#7909;c trong album <em>&#272;&#227; x&#243;a g&#7847;n &#273;&#226;y</em> c&#7911;a &#7842;nh iOS, th&#432;&#7901;ng t&#7889;i &#273;a 30 ng&#224;y. Ch&#7885;n L&#432;u b&#7843;n sao ho&#7863;c Chia s&#7867; b&#7843;n s&#7841;ch &#273;&#7875; gi&#7919; nguy&#234;n b&#7843;n g&#7889;c.</p>
+        <h3>4. L&#224;m sao &#273;&#7875; b&#225;o l&#7895;i ho&#7863;c t&#7855;t ph&#226;n t&#237;ch s&#7917; d&#7909;ng?</h3>
+        <p>Nh&#7845;n <strong>Feedback</strong> &#273;&#7875; g&#7917;i ph&#7843;n h&#7891;i, email h&#7895; tr&#7907; ho&#7863;c t&#7855;t c&#244;ng t&#7855;c ch&#7849;n &#273;o&#225;n. S&#7921; ki&#7879;n s&#7917; d&#7909;ng v&#224; b&#225;o c&#225;o l&#7895;i &#273;&#432;&#7907;c &#7913;ng d&#7909;ng x&#7917; l&#253; d&#249;ng m&#227; c&#224;i &#273;&#7863;t v&#224; m&#227; phi&#234;n ng&#7851;u nhi&#234;n. Xem Ch&#237;nh s&#225;ch quy&#7873;n ri&#234;ng t&#432; &#273;&#7875; bi&#7871;t th&#234;m.</p>
       </article>
     </main>
 

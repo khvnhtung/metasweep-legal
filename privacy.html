@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="googlebot" content="noindex, nofollow, noarchive">
-  <title>Privacy Policy · Chính sách quyền riêng tư — MetaSweep</title>
+  <title>MetaSweep: Usage Diagnostics &amp; Privacy Policy · Chính sách quyền riêng tư — MetaSweep</title>
   <link rel="icon" type="image/png" sizes="120x120" href="logo.png">
   <link rel="apple-touch-icon" href="logo.png">
   <link rel="stylesheet" href="styles.css">
@@ -41,26 +41,27 @@
 
     <main>
       <article class="card" data-lang="en">
-        <span class="badge">Effective Date: November 11, 2026</span>
+        <span class="badge">Effective Date: November 13, 2026</span>
         <h1>Privacy Policy</h1>
-        <p><strong>MetaSweep (EXIF Editor: Photo Metadata)</strong> is built around a strict <strong>100% On-Device Media Engine</strong>. Your photos, videos, filenames, GPS coordinates, and EXIF/IPTC metadata never leave your iPhone or iPad.</p>
+        <p><strong>MetaSweep (EXIF Editor: Photo Metadata)</strong> is built around a strict <strong>on-device media processing</strong>. Media editing runs locally. MetaSweep does not upload your photos, videos, or their metadata to its analytics service. If you choose to share an exported copy, your chosen destination receives it.</p>
 
-        <h2>1. 100% On-Device Media Processing &amp; Zero Photo Exfiltration</h2>
+        <h2>1. Local Media Processing</h2>
         <p>All metadata inspection, GPS scrubbing, satellite geotagging, timestamp shifting, IPTC authoring, and 4K video audio muting run strictly on your device via Apple's native <code>ImageIO</code>, <code>AVFoundation</code>, and <code>PHPhotoLibrary</code> frameworks. The iOS Share Extension (<em>Clean &amp; Share</em>) contains zero networking or analytics code.</p>
 
         <h2>2. Photo Library &amp; File Access</h2>
         <ul>
           <li><strong>Zero-Permission Picker Mode:</strong> You can inspect and scrub individual photos or files using Apple's system <code>PhotosPicker</code> or Files importer without granting Photo Library permission.</li>
-          <li><strong>Optional Photo Library Access:</strong> If you grant Photo Library access to use the Smart Filter Grid (e.g., filtering by <em>Has GPS</em>, <em>Videos</em>, <em>Live</em>, or <em>RAW</em>) or to commit edits back to your Camera Roll, all scanning and lossless container mutation occur strictly in local memory and temporary on-device storage.</li>
+          <li><strong>Optional Photo Library Access:</strong> If you grant Photo Library access to use the Smart Filter Grid (e.g., filtering by <em>Has GPS</em>, <em>Videos</em>, <em>Live</em>, or <em>RAW</em>) or to commit edits back to your Camera Roll, library scanning and supported metadata edits occur strictly in local memory and temporary on-device storage.</li>
         </ul>
 
-        <h2>3. Optional Anonymous Diagnostics &amp; In-App Feedback</h2>
-        <p>To help us detect crashes, camera format edge cases, and usability issues, the main MetaSweep app uses <strong>PostHog</strong> in strict anonymous mode (<code>NSPrivacyTracking = false</code>, zero advertising identifiers, zero third-party ad networks):</p>
+        <h2>3. Usage Diagnostics &amp; Voluntary Feedback</h2>
+        <p>The main app uses <strong>PostHog</strong> for feature usage, app lifecycle events and diagnostics for errors handled by the app, enabled by default. Events include feature and screen names, operation modes, counts and durations, app/OS/SDK versions, device model/type, screen size, language and time zone. Random installation and session identifiers associate events from the same installation or session; this is pseudonymous data, not a guarantee of anonymity. We do not use advertising identifiers or cross-app advertising tracking.</p>
         <ul>
-          <li><strong>No User Profiles &amp; No Screen Replay:</strong> Configured with <code>personProfiles = .never</code>, session replay disabled, and UI view autocapture disabled.</li>
-          <li><strong>Automatic On-Device Redaction:</strong> Before any anonymous diagnostic event, crash trace, or voluntary in-app feedback message is sent, a local client-side scrubber strips GPS coordinate pairs, photo/video filenames, file paths, URLs, tokens, and email addresses.</li>
-          <li><strong>Instant Opt-Out Anytime:</strong> Tap <strong>Feedback</strong> in the top-left toolbar of MetaSweep and turn off <em>Share Anonymous Usage &amp; Crash Diagnostics</em> at any time to immediately halt all telemetry.</li>
-          <li><strong>Lightweight Update Check:</strong> On launch, the app may fetch a static <code>version.json</code> manifest over HTTPS without cookies or identifiers solely to notify you of critical iOS media format fixes.</li>
+          <li><strong>No profiles or replay:</strong> Person profiles, session replay and automatic UI interaction capture are disabled. IP-based location enrichment is disabled in the SDK configuration. Network providers still receive the IP address needed to deliver requests.</li>
+          <li><strong>Media protection:</strong> An on-device filter removes known sensitive metadata keys and redacts recognized GPS pairs, filenames, paths, URLs, tokens and email patterns from diagnostic strings. Pattern filtering cannot guarantee removal of every personal detail from arbitrary text. Handled-error diagnostics can include sanitized error descriptions, technical exception and stack information. Automatic native and MetricKit crash reporting through PostHog is disabled.</li>
+          <li><strong>Voluntary feedback:</strong> When you submit feedback, the selected category and your message are sent with app and screen context. Please do not include personal details or media metadata. Sending support email uses your email provider and includes the information you choose to send.</li>
+          <li><strong>Opt-out:</strong> In <strong>Feedback</strong>, turn off the diagnostics toggle to stop new app analytics and feedback submissions. The preference is saved for future launches. Requests already sent cannot be recalled.</li>
+          <li><strong>Update checks:</strong> Separately, the app may fetch a static <code>version.json</code> over HTTPS to check for updates. The hosting provider receives ordinary connection information, including your IP address.</li>
         </ul>
 
         <h2>4. Local On-Device Storage</h2>
@@ -74,9 +75,9 @@
       </article>
 
       <article class="card" data-lang="vi">
-        <span class="badge">Ngày có hiệu lực: 11/11/2026</span>
+        <span class="badge">Ngày có hiệu lực: 13/11/2026</span>
         <h1>Chính sách quyền riêng tư</h1>
-        <p><strong>MetaSweep (EXIF Editor: Photo Metadata)</strong> hoạt động theo kiến trúc <strong>Xử lý phương tiện 100% trên thiết bị</strong>. Hình ảnh, video, tên tệp, tọa độ GPS và siêu dữ liệu EXIF/IPTC của bạn không bao giờ rời khỏi iPhone hoặc iPad.</p>
+        <p><strong>MetaSweep (EXIF Editor: Photo Metadata)</strong> hoạt động theo kiến trúc <strong>Xử lý phương tiện 100% trên thiết bị</strong>. Việc chỉnh sửa diễn ra cục bộ. MetaSweep không tải ảnh, video hay siêu dữ liệu của chúng lên dịch vụ phân tích. Nếu bạn chủ động chia sẻ bản xuất, nơi nhận do bạn chọn sẽ nhận bản đó.</p>
 
         <h2>1. Xử lý ảnh &amp; video 100% trên thiết bị</h2>
         <p>Mọi thao tác đọc siêu dữ liệu, xóa GPS, ghim vị trí vệ tinh, đổi múi giờ, sửa IPTC và tắt tiếng video 4K đều diễn ra cục bộ thông qua <code>ImageIO</code>, <code>AVFoundation</code> và <code>PHPhotoLibrary</code>. Tiện ích chia sẻ (<em>Clean &amp; Share</em>) hoàn toàn không chứa mã kết nối mạng hay phân tích.</p>
@@ -84,8 +85,15 @@
         <h2>2. Quyền truy cập Thư viện ảnh &amp; Tệp</h2>
         <p>Bạn có thể chọn từng ảnh/tệp qua <code>PhotosPicker</code> hoặc ứng dụng Tệp mà không cần cấp quyền Thư viện ảnh, hoặc cấp quyền tùy chọn để lọc nhanh ảnh chứa GPS, Video, Live Photo và RAW ngay trên thiết bị.</p>
 
-        <h2>3. Chẩn đoán lỗi ẩn danh tùy chọn &amp; Gửi phản hồi trong ứng dụng</h2>
-        <p>Để phát hiện lỗi định dạng máy ảnh và sự cố ứng dụng, ứng dụng chính sử dụng <strong>PostHog</strong> ở chế độ ẩn danh nghiêm ngặt (<code>NSPrivacyTracking = false</code>, không quảng cáo, không theo dõi liên ứng dụng, không tạo hồ sơ người dùng và không ghi màn hình). Bộ lọc cục bộ tự động ẩn tọa độ GPS, tên tệp ảnh/video, đường dẫn và email trước khi gửi. Bạn có thể tắt hoàn toàn bất cứ lúc nào tại mục <strong>Feedback → Share Anonymous Usage &amp; Crash Diagnostics</strong>.</p>
+        <h2>3. Dữ liệu sử dụng, chẩn đoán &amp; phản hồi tự nguyện</h2>
+        <p>Ứng dụng chính dùng <strong>PostHog</strong> để phân tích tính năng, sự kiện vòng đời ứng dụng và chẩn đoán các lỗi được ứng dụng xử lý; chức năng này mặc định được bật. Dữ liệu gồm tên tính năng và màn hình, chế độ thao tác, số lượng và thời lượng, phiên bản ứng dụng/hệ điều hành/SDK, mẫu và loại thiết bị, kích thước màn hình, ngôn ngữ và múi giờ. Mã cài đặt và mã phiên ngẫu nhiên liên kết các sự kiện trong cùng lần cài đặt hoặc phiên sử dụng; đây là dữ liệu có mã định danh thay thế, không phải cam kết ẩn danh tuyệt đối. Chúng tôi không dùng mã quảng cáo hay theo dõi quảng cáo liên ứng dụng.</p>
+        <ul>
+          <li><strong>Không hồ sơ hay phát lại màn hình:</strong> Hồ sơ người dùng, phát lại phiên và tự động ghi tương tác giao diện đều bị tắt. Cấu hình SDK tắt suy luận vị trí từ IP. Nhà cung cấp mạng vẫn nhận địa chỉ IP cần thiết để truyền yêu cầu.</li>
+          <li><strong>Bảo vệ phương tiện:</strong> Bộ lọc trên thiết bị loại bỏ các khóa siêu dữ liệu nhạy cảm đã biết và che các mẫu tọa độ GPS, tên tệp, đường dẫn, URL, mã truy cập và email được nhận diện trong chuỗi chẩn đoán. Bộ lọc theo mẫu không thể bảo đảm loại bỏ mọi chi tiết cá nhân khỏi văn bản tùy ý. Chẩn đoán lỗi đã được xử lý có thể chứa mô tả lỗi đã qua bộ lọc, thông tin kỹ thuật về ngoại lệ và ngăn xếp lệnh. Tính năng tự động báo cáo sự cố native và MetricKit qua PostHog đã bị tắt.</li>
+          <li><strong>Phản hồi tự nguyện:</strong> Khi gửi phản hồi, danh mục và nội dung bạn nhập được gửi kèm ngữ cảnh ứng dụng và màn hình. Vui lòng không nhập thông tin cá nhân hay siêu dữ liệu phương tiện. Email hỗ trợ được gửi qua nhà cung cấp email của bạn với thông tin bạn chọn gửi.</li>
+          <li><strong>Tắt phân tích:</strong> Trong <strong>Feedback</strong>, tắt công tắc chẩn đoán để dừng các sự kiện phân tích mới và việc gửi phản hồi trong ứng dụng. Lựa chọn được lưu cho các lần mở sau. Không thể thu hồi yêu cầu đã gửi.</li>
+          <li><strong>Kiểm tra cập nhật:</strong> Ứng dụng có thể tải riêng tệp <code>version.json</code> tĩnh qua HTTPS. Nhà cung cấp lưu trữ nhận thông tin kết nối thông thường, gồm địa chỉ IP.</li>
+        </ul>
 
         <h2>4. Lưu trữ cục bộ &amp; Phiên bản ra mắt miễn phí</h2>
         <p>Mẫu cài sẵn và lịch sử chỉnh sửa chỉ được lưu trong cơ sở dữ liệu SQLite cục bộ trên máy. Trong phiên bản ra mắt hiện tại, toàn bộ tính năng được mở khóa miễn phí 100% và không có quảng cáo.</p>
